@@ -51,7 +51,7 @@ def destroy_widget(widget):
     widget.destroy()
 
 def prediction():
-    # windo.after(2000, destroy_widget, cp)
+    windo.after(2000, destroy_widget, cp)
     def load_image(im_file):
         dimension = (104, 104)
         flat_data = []
@@ -79,10 +79,10 @@ def prediction():
                     bg="firebrick1",
                     font=('times', 23, ' bold '))
     pred1.place(x=454, y=540)
-    # windo.after(7000, destroy_widget, pred1)
-    # windo.after(7000, destroy_widget, display)
-    # windo.after(7000, destroy_widget, imageFrame)
-    # windo.after(7000, destroy_widget, dn1)
+    windo.after(7000, destroy_widget, pred1)
+    windo.after(7000, destroy_widget, display)
+    windo.after(7000, destroy_widget, imageFrame)
+    windo.after(7000, destroy_widget, dn1)
 
 ri = PIL.Image.open('ml.png')
 ri =ri.resize((321,263), PIL.Image.ANTIALIAS)
